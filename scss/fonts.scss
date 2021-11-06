@@ -1,62 +1,62 @@
 @font-face {
   font-family: "Fira Sans";
-  src: url($fs-regular);
+  src: url($fs-regular) format("woff2");
 }
 
 @font-face {
   font-family: "Fira Sans";
-  src: url($fs-italic);
+  src: url($fs-italic) format("woff2");
   font-style: italic;
 }
 
 @font-face {
   font-family: "Fira Sans";
-  src: url($fs-light);
+  src: url($fs-light) format("woff2");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Fira Sans";
-  src: url($fs-light-italic);
+  src: url($fs-light-italic) format("woff2");
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Fira Sans";
-  src: url($fs-semibold);
+  src: url($fs-semibold) format("woff2");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Fira Sans";
-  src: url($fs-semibold-italic);
+  src: url($fs-semibold-italic) format("woff2");
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Fira Sans";
-  src: url($fs-bold);
+  src: url($fs-bold) format("woff2");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Fira Sans";
-  src: url($fs-bold-italic);
+  src: url($fs-bold-italic) format("woff2");
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Fira Sans";
-  src: url($fs-black);
+  src: url($fs-black) format("woff2");
   font-weight: 900;
 }
 
 @font-face {
   font-family: "Fira Sans";
-  src: url($fs-black-italic);
+  src: url($fs-black-italic) format("woff2");
   font-weight: 900;
   font-style: italic;
 }
