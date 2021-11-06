@@ -23,7 +23,9 @@ h4 {
 }
 
 table {
-  border-collapse: separate;
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
 }
 
 thead {
