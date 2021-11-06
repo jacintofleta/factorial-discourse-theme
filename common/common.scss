@@ -22,9 +22,14 @@ h4 {
   color: var(--neutral-80);
 }
 
+table {
+  border-collapse: separate;
+}
+
 thead {
   background-color: var(--neutral-10);
-  border-radius: 25px;
+  border-top-right-radius:10px
+  border-top-left-radius:10px
 }
 
 tr {
