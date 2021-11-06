@@ -144,11 +144,11 @@
 
 .btn-radical {
   @include btn(
-    $text-color: "#fff",
+    $text-color: #fff,
     $bg-color: var(--radical-100),
-    $icon-color: "#fff",
+    $icon-color: #fff,
     $hover-bg-color: var(--radical-120),
-    $hover-icon-color: "#fff"
+    $hover-icon-color: #fff
   );
 }
 
