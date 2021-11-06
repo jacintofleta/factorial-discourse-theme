@@ -7,4 +7,5 @@ en:
     badges_header: "Your Top Badges"
     full_profile: "View your full profile"
   banner:
-    title: "Hr community"
+    title_welcome: "Welcome to the"
+    title: "HR community"
