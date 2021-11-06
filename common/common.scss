@@ -20,6 +20,8 @@ h1 span {
   height: 300px;
   width: 100%;
   background: var(--neutral-10);
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
