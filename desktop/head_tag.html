@@ -2,7 +2,6 @@
   type="text/x-handlebars"
   data-template-name="/connectors/below-site-header/custom-banner"
 >
-
   <div class="hero-banner">
     <div class="artifact-right"></div>
     <div class="artifact-left"></div>
@@ -11,4 +10,10 @@
     <button aria-label="Themes" id="ember190" class="themes-tab tab btn-radical active btn btn-text ember-view" type="button"><span class="d-button-label">{{theme-i18n "banner.cta"}}</span>
     </button>
   </div>
+</script>
+
+<script type="text/discourse-plugin" version="0.8">
+  const user = api.getCurrentUser();
+
+  console.log(user)
 </script>
