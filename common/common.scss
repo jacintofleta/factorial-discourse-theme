@@ -9,7 +9,7 @@ html {
 .hello-world-banner {
   height: 300px;
   width: 100%;
-  background: $radical-120;
+  background: var(--quaternary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,5 +18,5 @@ html {
 
 .hello-world {
   font-size: 8em;
-  color: $viridian-100;
+  color: var(--secondary);
 }
