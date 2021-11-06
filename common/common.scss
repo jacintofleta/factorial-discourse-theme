@@ -6,6 +6,12 @@ html {
   font-family: "Fira Sans";
 }
 
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+  color: var(--neutral-100);
+}
+
 .hero-banner {
   height: 300px;
   width: 100%;
@@ -14,11 +20,6 @@ html {
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
-}
-
-.hero-text {
-  font-size: 8em;
-  color: var(--secondary);
 }
 
 #main-outlet {
