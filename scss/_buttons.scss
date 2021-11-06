@@ -4,14 +4,15 @@
 
 // Base
 // --------------------------------------------------
+@import "colors";
 
 @mixin btn(
-  $text-color: var(--primary),
-  $bg-color: var(--primary-low),
-  $icon-color: var(--primary-high),
-  $hover-text-color: var(--secondary),
-  $hover-bg-color: var(--primary-medium),
-  $hover-icon-color: var(--primary-low)
+  $text-color: "#ffffff",
+  $bg-color: var(--radical-100),
+  $icon-color: #ffffff,
+  $hover-text-color: #ffffff,
+  $hover-bg-color: var(--radical-120),
+  $hover-icon-color: #ffffff
 ) {
   box-sizing: border-box;
   display: inline-flex;
