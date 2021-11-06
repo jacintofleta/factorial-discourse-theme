@@ -22,11 +22,24 @@ h4 {
   color: var(--neutral-80);
 }
 
-.artifact {
+.artifact-right {
   background-image: url($artifact-arch);
   background-size: 100% 100%;
-  width: 400px;
-  height: 400px;
+  width: 296px;
+  height: 601px;
+  position: absolute;
+  top: -10%;
+  right: -10px;
+}
+
+.artifact-left {
+  background-image: url($artifact-circle);
+  background-size: 100% 100%;
+  width: 296px;
+  height: 601px;
+  position: absolute;
+  top: -10%;
+  left: -10px;
 }
 
 .hero-banner {
