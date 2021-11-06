@@ -1,5 +1,17 @@
 {
   "name": "Factorial Theme",
   "about_url": "https://community.factorialhr.com",
-  "license_url": "https://github.com/jacintofleta/factorial-discourse-theme"
+  "license_url": "https://github.com/jacintofleta/factorial-discourse-theme",
+  "assets": {
+    "fs-500-woff": "assets/fira-sans-v11-latin-500.woff",
+    "fs-500-woff2": "assets/fira-sans-v11-latin-500.woff2",
+    "fs-600-woff": "assets/fira-sans-v11-latin-600.woff",
+    "fs-600-woff2": "assets/fira-sans-v11-latin-600.woff2",
+    "fs-700-woff": "assets/fira-sans-v11-latin-700.woff",
+    "fs-700-woff2": "assets/fira-sans-v11-latin-700.woff2",
+    "fs-italic-woff": "assets/fira-sans-v11-latin-italic.woff",
+    "fs-italic-woff2": "assets/fira-sans-v11-latin-italic.woff2",
+    "fs-regular-woff": "assets/fira-sans-v11-latin-regular.woff",
+    "fs-regular-woff2": "assets/fira-sans-v11-latin-regular.woff2"
+  }
 }

@@ -1,0 +1,45 @@
+/* fira-sans-regular - latin */
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-display: optional;
+  font-weight: 400;
+  src: local("Fira Sans"), url($fs-regular-woff2) format("woff2"),
+    /* Super Modern Browsers */ url($fs-regular-woff) format("woff"); /* Modern Browsers */
+}
+/* fira-sans-italic - latin */
+@font-face {
+  font-family: "Fira Sans";
+  font-style: italic;
+  font-display: optional;
+  font-weight: 400;
+  src: local("Fira Sans"), url($fs-italic-woff2) format("woff2"),
+    /* Super Modern Browsers */ url($fs-italic-woff) format("woff"); /* Modern Browsers */
+}
+/* fira-sans-500 - latin */
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-display: optional;
+  font-weight: 500;
+  src: local("Fira Sans"), url($fs-500-woff2) format("woff2"),
+    /* Super Modern Browsers */ url($fs-500-woff) format("woff"); /* Modern Browsers */
+}
+/* fira-sans-600 - latin */
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-display: optional;
+  font-weight: 600;
+  src: local("Fira Sans"), url($fs-500-woff2) format("woff2"),
+    /* Super Modern Browsers */ url($fs-600-woff) format("woff"); /* Modern Browsers */
+}
+/* fira-sans-700 - latin */
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-display: optional;
+  font-weight: 700;
+  src: local("Fira Sans"), url($fs-700-woff2) format("woff2"),
+    /* Super Modern Browsers */ url($fs-700-woff) format("woff"); /* Modern Browsers */
+}
