@@ -1,7 +1,15 @@
+@import "fonts";
+@import "buttons";
+
+html {
+  font-family: "Fira Sans";
+}
+
 .hello-world-banner {
-  height: 300px;
+  max-height: 588px;
+  position: relative;
   width: 100%;
-  background: var(--quaternary);
+  background: var(--neutral-20);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,11 +19,4 @@
 .hello-world {
   font-size: 8em;
   color: white;
-}
-@import "fonts";
-@import "buttons";
-
-html {
-  font-family: "Fira Sans";
-  background: var(--radical.120);
 }
