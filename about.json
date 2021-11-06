@@ -13,5 +13,19 @@
     "fs-bold-italic": "assets/fira-sans-v11-latin-700italic.woff2",
     "fs-black": "assets/fira-sans-v11-latin-900.woff2",
     "fs-black-italic": "assets/fira-sans-v11-latin-900italic.woff2"
+  },
+  "color_schemes": {
+    "Factorial Colors": {
+      "primary": "f2f2f2",
+      "secondary": "282a36",
+      "tertiary": "bd93f9",
+      "quaternary": "8be9fd",
+      "header_background": "ffffff",
+      "header_primary": "14151f",
+      "highlight": "f1fa8c",
+      "danger": "ff5555",
+      "success": "50fa7b",
+      "love": "ff79c6"
+    }
   }
 }
