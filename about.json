@@ -12,7 +12,9 @@
     "fs-bold": "assets/font/fira-sans-v11-latin-700.woff2",
     "fs-bold-italic": "assets/font/fira-sans-v11-latin-700italic.woff2",
     "fs-black": "assets/font/fira-sans-v11-latin-900.woff2",
-    "fs-black-italic": "assets/font/fira-sans-v11-latin-900italic.woff2"
+    "fs-black-italic": "assets/font/fira-sans-v11-latin-900italic.woff2",
+    "artifact-circle": "assets/artifacts/circle.svg",
+    "artifact-arch": "assets/artifacts/arch.svg"
   },
   "color_schemes": {
     "Factorial Colors": {
