@@ -1,22 +1,24 @@
 // Main discourse colors are configured in about.json
 // Here we can define additional# colors
 
-$neutral-100: #25253d;
-$neutral-80: #515164;
-$neutral-60: #7c7c8b;
-$neutral-40: #a8a8b1;
-$neutral-20: #d3d3d8;
-$neutral-10: #e9e9ec;
-$neutral-5: #f4f4f5;
-$radical-120: #e51943;
-$radical-100: #ff355e;
-$radical-60: #ff869e;
-$radical-10: #ffebef;
-$radical-5: #faf2f4;
-$viridian-120: #06838c;
-$viridian-100: #07a2ad;
-$viridian-60: #6ac7ce;
-$viridian-10: #e6f6f7;
-$complementary-100: #f5ba58;
-$complementary-20: #fbe3bc;
-$complementary-10: #fef8ee;
+:root {
+  --neutral-100: #25253d;
+  --neutral-80: #515164;
+  --neutral-60: #7c7c8b;
+  --neutral-40: #a8a8b1;
+  --neutral-20: #d3d3d8;
+  --neutral-10: #e9e9ec;
+  --neutral-5: #f4f4f5;
+  --radical-120: #e51943;
+  --radical-100: #ff355e;
+  --radical-60: #ff869e;
+  --radical-10: #ffebef;
+  --radical-5: #faf2f4;
+  --viridian-120: #06838c;
+  --viridian-100: #07a2ad;
+  --viridian-60: #6ac7ce;
+  --viridian-10: #e6f6f7;
+  --complementary-100: #f5ba58;
+  --complementary-20: #fbe3bc;
+  --complementary-10: #fef8ee;
+}
