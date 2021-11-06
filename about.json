@@ -16,9 +16,9 @@
   },
   "color_schemes": {
     "Factorial Colors": {
-      "primary": "f2f2f2",
-      "secondary": "282a36",
-      "tertiary": "bd93f9",
+      "primary": "FF355E",
+      "secondary": "07A2AD",
+      "tertiary": "F5BA58",
       "quaternary": "8be9fd",
       "header_background": "ffffff",
       "header_primary": "14151f",
@@ -26,33 +26,25 @@
       "danger": "ff5555",
       "success": "50fa7b",
       "love": "ff79c6",
-      "neutral": {
-        "100": "25253D",
-        "80": "515164",
-        "60": "7C7C8B",
-        "40": "A8A8B1",
-        "20": "D3D3D8",
-        "10": "E9E9EC",
-        "5": "F4F4F5"
-      },
-      "radical": {
-        "120": "E51943",
-        "100": "FF355E",
-        "60": "FF869E",
-        "10": "FFEBEF",
-        "5": "FAF2F4"
-      },
-      "viridian": {
-        "120": "06838C",
-        "100": "07A2AD",
-        "60": "6AC7CE",
-        "10": "E6F6F7"
-      },
-      "complementary": {
-        "100": "F5BA58",
-        "20": "FBE3BC",
-        "10": "FEF8EE"
-      }
+      "neutral-100": "25253D",
+      "neutral-80": "515164",
+      "neutral-60": "7C7C8B",
+      "neutral-40": "A8A8B1",
+      "neutral-20": "D3D3D8",
+      "neutral-10": "E9E9EC",
+      "neutral-5": "F4F4F5",
+      "radical120": "E51943",
+      "radical100": "FF355E",
+      "radical60": "FF869E",
+      "radical10": "FFEBEF",
+      "radical5": "FAF2F4",
+      "viridian-120": "06838C",
+      "viridian-100": "07A2AD",
+      "viridian-60": "6AC7CE",
+      "viridian-10": "E6F6F7",
+      "complementary-100": "F5BA58",
+      "complementary-20": "FBE3BC",
+      "complementary-10": "FEF8EE"
     }
   }
 }
