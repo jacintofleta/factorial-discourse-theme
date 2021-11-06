@@ -3,16 +3,16 @@
   "about_url": "https://community.factorialhr.com",
   "license_url": "https://github.com/jacintofleta/factorial-discourse-theme",
   "assets": {
-    "fs-regular": "assets/fira-sans-v11-latin-regular.woff2",
-    "fs-italic": "assets/fira-sans-v11-latin-italic.woff2",
-    "fs-light": "assets/fira-sans-v11-latin-300.woff2",
-    "fs-light-italic": "assets/fira-sans-v11-latin-300italic.woff2",
-    "fs-semibold": "assets/fira-sans-v11-latin-600.woff2",
-    "fs-semibold-italic": "assets/fira-sans-v11-latin-600italic.woff2",
-    "fs-bold": "assets/fira-sans-v11-latin-700.woff2",
-    "fs-bold-italic": "assets/fira-sans-v11-latin-700italic.woff2",
-    "fs-black": "assets/fira-sans-v11-latin-900.woff2",
-    "fs-black-italic": "assets/fira-sans-v11-latin-900italic.woff2"
+    "fs-regular": "assets/font/fira-sans-v11-latin-regular.woff2",
+    "fs-italic": "assets/font/fira-sans-v11-latin-italic.woff2",
+    "fs-light": "assets/font/fira-sans-v11-latin-300.woff2",
+    "fs-light-italic": "assets/font/fira-sans-v11-latin-300italic.woff2",
+    "fs-semibold": "assets/font/fira-sans-v11-latin-600.woff2",
+    "fs-semibold-italic": "assets/font/fira-sans-v11-latin-600italic.woff2",
+    "fs-bold": "assets/font/fira-sans-v11-latin-700.woff2",
+    "fs-bold-italic": "assets/font/fira-sans-v11-latin-700italic.woff2",
+    "fs-black": "assets/font/fira-sans-v11-latin-900.woff2",
+    "fs-black-italic": "assets/font/fira-sans-v11-latin-900italic.woff2"
   },
   "color_schemes": {
     "Factorial Colors": {
