@@ -28,8 +28,8 @@ h4 {
   width: 296px;
   height: 601px;
   position: absolute;
-  top: -10%;
-  right: -10px;
+  top: -35%;
+  right: -35px;
 }
 
 .artifact-left {
@@ -38,7 +38,7 @@ h4 {
   width: 296px;
   height: 601px;
   position: absolute;
-  top: -10%;
+  top: 10%;
   left: -10px;
 }
 
@@ -54,6 +54,7 @@ h4 {
   justify-content: center;
   margin-bottom: 1rem;
   position: relative;
+  overflow: hidden;
 }
 
 #main-outlet {
