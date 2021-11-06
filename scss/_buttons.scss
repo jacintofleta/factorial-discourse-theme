@@ -139,6 +139,19 @@
   );
 }
 
+// Radical button
+// --------------------------------------------------
+
+.btn-radical {
+  @include btn(
+    $text-color: "#fff",
+    $bg-color: var(--radical-100),
+    $icon-color: "#fff",
+    $hover-bg-color: var(--radical-120),
+    $hover-icon-color: "#fff"
+  );
+}
+
 // ✘ and ✔ buttons
 // --------------------------------------------------
 
