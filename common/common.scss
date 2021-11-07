@@ -25,6 +25,8 @@ h4 {
 table {
   overflow: hidden;
   border-collapse: separate !important;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 table th {
