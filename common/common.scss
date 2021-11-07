@@ -53,3 +53,8 @@ th:nth-last-child(1) {
   color: var(--primary);
   border-radius: 10px;
 }
+
+.nav-pills > li a.active {
+  color: var(--secondary);
+  background-color: var(--primary);
+}
