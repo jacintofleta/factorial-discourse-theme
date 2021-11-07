@@ -36,18 +36,3 @@
 #main-outlet {
   padding-top: 0px; /*this value must be changed if the height of the header has been changed*/
 }
-
-.sidebar {
-  padding: 0 1em;
-  .card {
-    padding: 0.5em;
-    margin: 0.5em 0;
-    box-sizing: border-box;
-  }
-}
-
-table.topic-list {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
-}
