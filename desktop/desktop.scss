@@ -36,3 +36,22 @@
 #main-outlet {
   padding-top: 0px; /*this value must be changed if the height of the header has been changed*/
 }
+
+@import "common/foundation/variables";
+
+.sidebar {
+  background: $secondary-high;
+  padding: 0 1em;
+  .card {
+    background: $secondary;
+    height: 200px;
+    width: 200px;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    box-sizing: border-box;
+  }
+}
+
+table.topic-list {
+  display: flex;
+}
