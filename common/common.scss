@@ -47,3 +47,8 @@ th:nth-child(1) {
 th:nth-last-child(1) {
   border-radius: 0px 10px 0px 0px;
 }
+
+.alert.alert-info {
+  background-color: var(--complementary-10);
+  color: var(--primary);
+}
