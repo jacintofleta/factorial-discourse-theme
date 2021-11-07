@@ -18,6 +18,7 @@
 <script>
   let showBanner = window.location.pathname === "/";
   if (showBanner) {
+    console.log("YES");
     Array.from(document.querySelectorAll(".js-hero-banner")).forEach((el) =>
       el.classList.remove("js-hero-banner")
     );
