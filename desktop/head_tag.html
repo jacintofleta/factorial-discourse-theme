@@ -21,14 +21,8 @@
 
         // Check if we're on the homepage
         if (url === "/" || url === homeRoute ){
-          // If it's the homepage add the 'custom-banner' class to HTML tag
-          // and set 'displayCustomHomepage' to true
-          document.querySelector("html").classList.add("hero-banner");
           component.set("displayCustomHomepage", true);
         } else {
-          // If we're not on the homepage remove the class
-          // and set `displayCustomHomepage` to false
-          document.querySelector("html").classList.remove("hero-banner");
           component.set("displayCustomHomepage", false);
         }
       });
