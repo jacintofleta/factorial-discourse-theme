@@ -1,9 +1,5 @@
 <script type="text/x-handlebars" data-template-name="components/topic-list">
-  <div class="sidebar">
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-  </div>
+
   {{plugin-outlet
     name="before-topic-list-body"
     args=(hash
@@ -46,4 +42,9 @@
       {{raw "list/visited-line" lastVisitedTopic=lastVisitedTopic topic=topic}}
     {{/each}}
   </tbody>
+  <div class="sidebar">
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+  </div>
 </script>
