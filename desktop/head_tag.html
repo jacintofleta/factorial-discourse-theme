@@ -19,7 +19,7 @@
   let showBanner = window.location.pathname === "/";
   console.log(window.location.pathname);
   if (showBanner) {
-    let element = document.getElementByClassname("js-hero-banner");
+    let element = document.getElementsByClassName("js-hero-banner")[0];
     element.classList.remove("js-hero-banner");
   }
 </script>
