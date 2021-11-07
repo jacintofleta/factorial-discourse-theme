@@ -24,8 +24,6 @@ h4 {
 
 table {
   border-collapse: collapse;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
   overflow: hidden;
 }
 
@@ -35,4 +33,6 @@ table th {
 
 thead {
   background-color: var(--neutral-10);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
