@@ -53,3 +53,7 @@ th:nth-last-child(1) {
   color: var(--primary);
   border-radius: 10px;
 }
+
+.nav-pills > li a.active {
+  border-bottom: 5px solid var(--viridian100);
+}
