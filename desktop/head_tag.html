@@ -23,12 +23,12 @@
         if (url === "/" || url === homeRoute ){
           // If it's the homepage add the 'custom-banner' class to HTML tag
           // and set 'displayCustomHomepage' to true
-          document.querySelector("html").classList.add("custom-banner");
+          document.querySelector("html").classList.add("hero-banner");
           component.set("displayCustomHomepage", true);
         } else {
           // If we're not on the homepage remove the class
           // and set `displayCustomHomepage` to false
-          document.querySelector("html").classList.remove("custom-banner");
+          document.querySelector("html").classList.remove("hero-banner");
           component.set("displayCustomHomepage", false);
         }
       });
@@ -42,7 +42,7 @@
   data-template-name="/connectors/below-site-header/custom-banner"
 >
   {{#if displayCustomHomepage}}
-  <div class="hero-banner js-hero-banner">
+  <div class="hero-banner">
     <div class="artifact-right"></div>
     <div class="artifact-left"></div>
     <h1 style="margin-bottom: 24px">{{theme-i18n "banner.title_welcome"}} <span>{{theme-i18n "banner.title"}}</span></h1>
