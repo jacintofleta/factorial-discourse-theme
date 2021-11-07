@@ -1,6 +1,5 @@
 <script type="text/x-handlebars" data-template-name="components/topic-list">
-      <div style="border-top-right-radius: 10px;">
-      {{#unless skipHeader}}
+      <div>
       <thead>
         {{raw "topic-list-header"
           canBulkSelect=canBulkSelect
@@ -17,7 +16,6 @@
           canDoBulkActions=canDoBulkActions
         }}
       </thead>
-    {{/unless}}
     {{plugin-outlet
       name="before-topic-list-body"
       args=(hash
