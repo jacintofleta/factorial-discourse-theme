@@ -17,9 +17,10 @@
 
 <script>
   let showBanner = window.location.pathname === "/";
-  console.log(showBanner);
   if (showBanner) {
     let elements = document.querySelectorAll("js-hero-banner");
-    elements[0].classList.remove("js-hero-banner");
+    [].forEach.call(elements, function (el) {
+      el.classList.remove("js-hero-banner");
+    });
   }
 </script>
