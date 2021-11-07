@@ -33,6 +33,10 @@
   overflow: hidden;
 }
 
+.js-hero-banner {
+  display: none;
+}
+
 #main-outlet {
   padding-top: 0px; /*this value must be changed if the height of the header has been changed*/
 }
