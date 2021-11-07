@@ -64,3 +64,14 @@ th:nth-last-child(1) {
   color: var(--neutral-100);
   background-color: #ffffff;
 }
+
+.d-header-icons .unread-notifications {
+  left: auto;
+  right: -3px;
+  background-color: var(--complementary-100);
+}
+
+.unread-high-priority-notifications {
+  color: #ffffff;
+  background: var(--radical-100);
+}
