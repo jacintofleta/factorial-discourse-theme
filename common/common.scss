@@ -57,4 +57,5 @@ th:nth-last-child(1) {
 .nav-pills > li a.active {
   color: var(--neutral-80);
   background-color: #ffffff;
+  border-bottom: 5px solid var(--viridian-100);
 }
