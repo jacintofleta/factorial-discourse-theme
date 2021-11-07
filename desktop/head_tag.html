@@ -19,7 +19,9 @@
   let showBanner = window.location.pathname === "/";
   console.log(showBanner);
   if (showBanner) {
-    let elements = document.getElementsByClassName("js-hero-banner");
+    let elements = Array.from(
+      document.getElementsByClassName("js-hero-banner")
+    );
     console.log(elements);
     console.log(elements[0]);
   }
