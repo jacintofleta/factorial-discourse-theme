@@ -2,7 +2,11 @@
 
 .homepage-category-boxes {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  @include lg {
+    flex-direction: row;
+  }
 }
 
 .homepage-category-box {
