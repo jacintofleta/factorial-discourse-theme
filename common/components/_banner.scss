@@ -1,0 +1,49 @@
+// HERO BANNER
+
+.artifact-right {
+  background-image: url($artifact-arch);
+  background-size: 100% 100%;
+  width: 296px;
+  height: 601px;
+  position: absolute;
+  top: -35%;
+  right: -35px;
+  display: none;
+  @include lg {
+    display: block;
+  }
+}
+
+.artifact-left {
+  background-image: url($artifact-circle);
+  background-size: 100% 100%;
+  width: 296px;
+  height: 601px;
+  position: absolute;
+  top: 10%;
+  left: -10px;
+  display: none;
+  @include lg {
+    display: block;
+  }
+}
+
+.hero-banner {
+  background: var(--neutral-5);
+  display: flex;
+  padding: 56px 32px;
+  align-items: left;
+  justify-content: left;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+  @include lg {
+    height: 300px;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    align-items: center;
+    justify-content: center;
+  }
+}
