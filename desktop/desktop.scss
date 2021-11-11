@@ -1,3 +1,13 @@
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+  color: var(--neutral-100);
+}
+
+h1 span {
+  color: var(--radical-100);
+}
+
 .artifact-right {
   background-image: url($artifact-arch);
   background-size: 100% 100%;

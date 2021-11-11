@@ -1,3 +1,13 @@
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--neutral-100);
+}
+
+h1 span {
+  color: var(--radical-100);
+}
+
 .hero-banner {
   height: 300px;
   width: 100%;
