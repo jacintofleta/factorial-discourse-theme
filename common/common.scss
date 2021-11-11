@@ -83,6 +83,9 @@ th:nth-last-child(1) {
   position: absolute;
   top: -35%;
   right: -35px;
+  @include mobile {
+    display: none;
+  }
 }
 
 .artifact-left {
@@ -93,6 +96,9 @@ th:nth-last-child(1) {
   position: absolute;
   top: 10%;
   left: -10px;
+  @include mobile {
+    display: none;
+  }
 }
 
 .hero-banner {
