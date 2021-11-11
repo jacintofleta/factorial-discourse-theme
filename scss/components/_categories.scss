@@ -42,3 +42,9 @@
 .category-image-wrapper {
   margin-bottom: 10px;
 }
+
+.category-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
