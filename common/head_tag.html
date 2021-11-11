@@ -1,4 +1,4 @@
-<!-- HOMEPAGE BANNER -->
+<!-- CHECK IF ITS HOMEPAGE -->
 
 <script type="text/discourse-plugin" version="0.8">
   console.log(api);
@@ -41,6 +41,8 @@
   data-template-name="/connectors/below-site-header/custom-banner"
 >
   {{#if displayCustomHomepage}}
+
+  <!-- HERO BANNER -->
   <div class="hero-banner">
     <div class="artifact-right"></div>
     <div class="artifact-left"></div>
@@ -52,25 +54,9 @@
     </a>
 
   </div>
-  {{/if}}
-</script>
 
-<!-- CATEGORIES BANNER -->
-<script
-  type="text/x-handlebars"
-  data-template-name="/connectors/below-site-header/custom-banner"
->
-  {{#if displayCustomHomepage}}
-  <div class="hero-banner">
-    <div class="artifact-right"></div>
-    <div class="artifact-left"></div>
-    <h1 style="margin-bottom: 24px">{{theme-i18n "banner.title_welcome"}} <span>{{theme-i18n "banner.title"}}</span></h1>
-    <h4 style="margin-bottom: 24px">{{theme-i18n "banner.subtitle"}}</h4>
-    <a href="/new-topic" style="color: #ffffff">
-        <button aria-label="Themes" id="ember190" class="themes-tab tab btn-radical active btn full btn-text ember-view" type="button"><span class="d-button-label">{{theme-i18n "banner.cta"}}</span>
-        </button>
-    </a>
+  <!-- CATEGORIES BANNER -->
 
-  </div>
+  hola
   {{/if}}
 </script>
