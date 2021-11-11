@@ -1,7 +1,11 @@
 <!-- CHECK IF ITS HOMEPAGE -->
 
 <script type="text/discourse-plugin" version="0.8">
-  console.log(Discourse.SiteSettings);
+  const container = Discourse.__container__;
+  let category;
+  const controller = container.lookup('controller:navigation/category');
+  category = controller.get("category");
+  console.log(category);
   // This is the plugin outlet, followed by a custom name for the component
   api.registerConnectorClass("below-site-header", "custom-banner", {
 
