@@ -125,3 +125,7 @@ th:nth-last-child(1) {
   position: relative;
   overflow: hidden;
 }
+
+.category-heading > .category-logo {
+  display: none;
+}
