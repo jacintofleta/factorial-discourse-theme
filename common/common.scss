@@ -27,6 +27,15 @@ h1 span {
   color: var(--radical-100);
 }
 
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--neutral-80);
+  @include lg {
+    font-size: 24px;
+  }
+}
+
 h4 {
   font-weight: 400;
   font-size: 20px;
