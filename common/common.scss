@@ -77,7 +77,7 @@ th:nth-last-child(1) {
   top: -35%;
   right: -35px;
   display: none;
-  @include md {
+  @include lg {
     display: block;
   }
 }
@@ -91,7 +91,7 @@ th:nth-last-child(1) {
   top: 10%;
   left: -10px;
   display: none;
-  @include md {
+  @include lg {
     display: block;
   }
 }
