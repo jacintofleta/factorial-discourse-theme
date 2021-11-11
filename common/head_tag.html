@@ -100,6 +100,97 @@
     </a>
 
   </div>
-
   {{/if}}
+</script>
+
+<script
+  type="text/x-handlebars"
+  data-template-name="components/categories-wrapper"
+>
+  <!-- This creates a component template called 'categories wrapper' -->
+  <!-- All of this template code was adapted from Discourse's own categories page template
+   https://github.com/discourse/discourse/blob/acd1693dac1bff6ff50250d942134bc48a27ff14/app/assets/javascripts/discourse/templates/components/categories-only.hbs -->
+
+  <div class="top-categories-wrapper">
+    {{#each categories as |c|}}
+        <div class="top-category-column-one">
+          {{category-title-link category=c}}
+          {{#if c.description}}
+            <div class="category-description">
+              {{dir-span c.description}}
+            </div>
+          {{/if}}
+          {{#if c.isGrandParent}}
+            <table class="category-list subcategories-with-subcategories">
+              <tbody>
+                {{#each c.subcategories as |subcategory|}}
+                  <tr
+                    data-category-id={{subcategory.id}}
+                    data-notification-level={{subcategory.notificationLevelString
+                    }}
+
+                  >
+                    <td
+                      class="category"
+                      style={{border-color subcategory.color}}
+                    >
+                      {{category-title-link tagName="h4" category=subcategory}}
+                      {{#if subcategory.description_excerpt}}
+                        <div
+                          class="category-description subcategory-description"
+                        >
+                          {{{dir-span subcategory.description_excerpt}}}
+                        </div>
+                      {{/if}}
+                      {{#if subcategory.subcategories}}
+                        <div class="subcategories">
+                          {{#each subcategory.subcategories as |subsubcategory|
+                          }}
+                            {{#unless subsubcategory.isMuted}}
+                              <span class="subcategory">
+                                {{category-title-before category=subsubcategory
+                                }}
+                                {{category-link subsubcategory hideParent="true"
+                                }}
+                              </span>
+                            {{/unless}}
+                          {{/each}}
+                        </div>
+                      {{else if subcategory.description_excerpt}}
+                        <div
+                          class="category-description subcategory-description"
+                        >
+                          {{{dir-span subcategory.description_excerpt}}}
+                        </div>
+                      {{/if}}
+                    </td>
+                  </tr>
+                {{/each}}
+              </tbody>
+            </table>
+          {{else if c.subcategories}}
+            <div class="subcategories">
+              {{#each c.subcategories as |subcategory|}}
+                {{#unless subcategory.isMuted}}
+                  <span class="subcategory">
+                    {{category-title-before category=subcategory}}
+                    {{category-link subcategory hideParent="true"}}
+                    {{category-unread category=subcategory}}
+                  </span>
+                {{/unless}}
+              {{/each}}
+            </div>
+          {{/if}}
+        </div>
+        <div class="top-category-column-two">
+          <span class="topics-header">
+            Topics
+          </span>
+          <span class="topics-count">
+            {{c.topic_count}}
+          </span>
+          {{category-unread category=c tagName="div" class="unread-new"}}
+        </div>
+    {{/each}}
+  </div>
 </script>
