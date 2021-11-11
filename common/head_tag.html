@@ -1,7 +1,7 @@
 <!-- CHECK IF ITS HOMEPAGE -->
 
 <script type="text/discourse-plugin" version="0.8">
-
+  const ajax = require('discourse/lib/ajax').ajax;
   // This is the plugin outlet, followed by a custom name for the component
   api.registerConnectorClass("below-site-header", "custom-banner", {
 
