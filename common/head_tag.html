@@ -29,8 +29,9 @@
           ajax("/site.json").then(function(result){
             let categoryName = [];
               result.categories.forEach(function(categories){
-                console.log(categories);
-                categoryName.push(categories);
+                if (categories.name !== "Uncategorized" && categories.name !== "Staff" &&
+                categories.name !== "Site Feedback" && categories.name !== "Lounge")
+                  categoryName.push(categories);
             });
             component.set('categoryName', categoryName);
           })
