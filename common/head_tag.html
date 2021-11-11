@@ -1,12 +1,7 @@
 <!-- CHECK IF ITS HOMEPAGE -->
 
 <script type="text/discourse-plugin" version="0.8">
-  const container = Discourse.__container__;
-  const controller = container.lookup('controller:navigation/category');
 
-  api.onPageChange((url, title) => {
-    console.log(controller.get("category.id");
-  });
   // This is the plugin outlet, followed by a custom name for the component
   api.registerConnectorClass("below-site-header", "custom-banner", {
 
