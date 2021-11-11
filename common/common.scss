@@ -119,11 +119,9 @@ th:nth-last-child(1) {
 }
 
 .hero-banner {
-  height: 300px;
-  width: 100%;
   background: var(--neutral-5);
   display: flex;
-  padding: 56px 0px;
+  padding: 56px 32px;
   align-items: left;
   justify-content: left;
   flex-direction: column;
@@ -131,6 +129,8 @@ th:nth-last-child(1) {
   position: relative;
   overflow: hidden;
   @include lg {
+    height: 300px;
+    width: 100%;
     padding-top: 80px;
     padding-bottom: 80px;
     align-items: center;
