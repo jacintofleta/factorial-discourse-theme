@@ -33,6 +33,53 @@
     }
 
   });
+
+  const Category = require("discourse/models/category").default;
+  // we will use the Category model to retrieve site categories
+
+  api.registerConnectorClass('above-main-container', 'featured-categories', {
+    // above-main-container is the plugin outlet,
+    // featured-topics is your custom component name
+
+    setupComponent(args, component) {
+
+      api.onPageChange((url, title) => {
+        console.log(url,title)
+        if ((url === "/") || (url === "/latest") ) {
+        // on page change, check if url matches
+        // if your homepage isn't /latest change this to /categories
+
+          $('html').addClass('custom-featured-categories');
+          // add a class to the HTML tag for easy CSS targetting
+
+          let definedFeaturedCategories = ["uncategorized","blog","two"]
+          // array of categories you want to feature
+          // be sure to put the category titles in lowercase
+
+          let featuredCategories = [];
+
+          categories = Category.list();
+
+          for (let cat of categories) {
+            if (definedFeaturedCategories.includes(cat.name.toLowerCase())) {
+              // only pushes categories you want to feature into the array to be rendered
+              featuredCategories.push(cat)
+            }
+          }
+
+          component.set('featuredCategories', featuredCategories)
+
+        } else {
+
+        // If the page doesn't match the urls above, do this:
+          $('html').removeClass('custom-featured-categories');
+          // Remove our custom class
+          component.set('categories',[])
+          // set the categories to an empty array to disable rendering
+        }
+      });
+    }
+  });
 </script>
 
 <script
