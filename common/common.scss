@@ -101,3 +101,11 @@ th:nth-last-child(1) {
   position: relative;
   overflow: hidden;
 }
+
+@media (min-width: 768px) {
+  .btn {
+    &.full {
+      width: 100%;
+    }
+  }
+}
