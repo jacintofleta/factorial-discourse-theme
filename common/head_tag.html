@@ -31,8 +31,9 @@
               result.categories.forEach(function(categories){
                 categoryName.push(categories);
             });
+            component.set('categoryName', categoryName);
           })
-          component.set('categoryName', categoryName);
+
         } else {
           $('html').removeClass('show-custom-homepage');
           component.set("displayCustomHomepage", false);
