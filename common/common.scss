@@ -102,7 +102,7 @@ th:nth-last-child(1) {
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .btn {
     &.full {
       width: 100%;
