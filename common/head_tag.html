@@ -101,11 +101,16 @@
 
   </div>
 
-  <!-- CATEGORIES BANNER -->
-
-  <div class="categories">
-
-  </div>
-
   {{/if}}
+</script>
+
+<script
+  type="text/x-handlebars"
+  data-template-name="/connectors/above-main-container/featured-categories"
+>
+  <div class="custom-featured-categories-wrapper">
+    {{categories-wrapper categories=featuredCategories}}
+      <!-- use the categories-wrapper template created below -->
+      <!-- define categories to be featuredCategories created in the script above -->
+  </div>
 </script>
