@@ -1,14 +1,7 @@
 @import "colors";
 @import "fonts";
 @import "buttons";
-
-$screen-mobile: 768px;
-
-@mixin mobile {
-  @media (max-width: #{$screen-mobile}) {
-    @content;
-  }
-}
+@import "screens";
 
 html {
   font-family: "Fira Sans";
@@ -83,8 +76,9 @@ th:nth-last-child(1) {
   position: absolute;
   top: -35%;
   right: -35px;
-  @include mobile {
-    display: none;
+  display: none;
+  @include md {
+    display: block;
   }
 }
 
@@ -96,8 +90,8 @@ th:nth-last-child(1) {
   position: absolute;
   top: 10%;
   left: -10px;
-  @include mobile {
-    display: none;
+  @include md {
+    display: block;
   }
 }
 
