@@ -29,6 +29,7 @@
           ajax("/site.json").then(function(result){
             let categoryName = [];
               result.categories.forEach(function(categories){
+                console.log(categories);
                 categoryName.push(categories);
             });
             component.set('categoryName', categoryName);
