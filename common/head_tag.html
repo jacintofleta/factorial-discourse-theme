@@ -1,7 +1,8 @@
 <!-- CHECK IF ITS HOMEPAGE -->
 
 <script type="text/discourse-plugin" version="0.8">
-  console.log(settings);
+  const Category = require("discourse/models/category").default;
+  console.log(Category)
   // This is the plugin outlet, followed by a custom name for the component
   api.registerConnectorClass("below-site-header", "custom-banner", {
 
