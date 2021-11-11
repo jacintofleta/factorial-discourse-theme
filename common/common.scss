@@ -7,6 +7,28 @@ html {
   font-family: "Fira Sans";
 }
 
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--neutral-100);
+  @include lg {
+    font-weight: 56px;
+  }
+}
+
+h1 span {
+  color: var(--radical-100);
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--neutral-80);
+  @include lg {
+    font-size: 18px;
+  }
+}
+
 table {
   overflow: hidden;
   border-collapse: separate !important;
