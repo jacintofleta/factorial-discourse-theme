@@ -8,6 +8,12 @@ h1 span {
   color: var(--radical-100);
 }
 
+h4 {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--neutral-80);
+}
+
 .artifact-right {
   background-image: url($artifact-arch);
   background-size: 100% 100%;
