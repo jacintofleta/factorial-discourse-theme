@@ -51,46 +51,46 @@
   type="text/x-handlebars"
   data-template-name="/connectors/below-site-header/custom-banner"
 >
-    {{#if displayCustomHomepage}}
+      {{#if displayCustomHomepage}}
 
-    <!-- HERO BANNER -->
-    <div class="hero-banner">
-      <div class="artifact-right"></div>
-      <div class="artifact-left"></div>
-      <h1 style="margin-bottom: 24px">{{theme-i18n "banner.title_welcome"}} <span>{{theme-i18n "banner.title"}}</span></h1>
-      <h4 style="margin-bottom: 24px">{{theme-i18n "banner.subtitle"}}</h4>
-      <a href="/new-topic" style="color: #ffffff">
-          <button aria-label="Themes" id="ember190" class="themes-tab tab btn-radical active btn full btn-text ember-view" type="button"><span class="d-button-label">{{theme-i18n "banner.cta"}}</span>
-          </button>
-      </a>
+      <!-- HERO BANNER -->
+      <div class="hero-banner">
+        <div class="artifact-right"></div>
+        <div class="artifact-left"></div>
+        <h1 style="margin-bottom: 24px">{{theme-i18n "banner.title_welcome"}} <span>{{theme-i18n "banner.title"}}</span></h1>
+        <h4 style="margin-bottom: 24px">{{theme-i18n "banner.subtitle"}}</h4>
+        <a href="/new-topic" style="color: #ffffff">
+            <button aria-label="Themes" id="ember190" class="themes-tab tab btn-radical active btn full btn-text ember-view" type="button"><span class="d-button-label">{{theme-i18n "banner.cta"}}</span>
+            </button>
+        </a>
 
-    </div>
+      </div>
 
-    <!-- CATEGORIES BANNER -->
+      <!-- CATEGORIES BANNER -->
 
-    <div class="custom-homepage-wrapper">
+      <div class="custom-homepage-wrapper">
 
-  <div class="wrap wrap-category-boxes">
-
-    <div class="homepage-category-boxes">
-      {{#each categoryName as |c|}}
-      <a href="/c/{{c.slug}}" class="box">
-        <div class="homepage-category-box">
-          {{#if c.uploaded_logo}}
-          <div class="category-image-wrapper">
-            <img class="homepage-category-image" src="{{c.uploaded_logo.url}}" />
+    <div class="wrap wrap-category-boxes">
+  <h3>Categories</h3>
+      <div class="homepage-category-boxes">
+        {{#each categoryName as |c|}}
+        <a href="/c/{{c.slug}}" class="box">
+          <div class="homepage-category-box">
+            {{#if c.uploaded_logo}}
+            <div class="category-image-wrapper">
+              <img class="homepage-category-image" src="{{c.uploaded_logo.url}}" />
+            </div>
+            {{/if}}
+            <h2>{{#if c.read_restricted}}<i class="fa fa-lock">&nbsp;</i>{{/if}}{{c.name}}</h2>
+            <p>{{c.description}}</p>
           </div>
-          {{/if}}
-          <h2>{{#if c.read_restricted}}<i class="fa fa-lock">&nbsp;</i>{{/if}}{{c.name}}</h2>
-          <p>{{c.description}}</p>
-        </div>
-      </a>
-      {{/each}}
+        </a>
+        {{/each}}
+      </div>
+
     </div>
 
-  </div>
+    </div>
 
-  </div>
-
-    {{/if}}
+      {{/if}}
 </script>
