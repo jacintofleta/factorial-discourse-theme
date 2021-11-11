@@ -36,68 +36,6 @@
   });
 </script>
 
-<script type="text/discourse-plugin" version="0.8">
-  const ajax = require('discourse/lib/ajax').ajax;
-
-  api.registerConnectorClass('below-site-header', 'custom-homepage', {
-    setupComponent(args, component) {
-      component.set('hostname', window.location.hostname);
-
-      api.onPageChange((url, title) => {
-        if (url == "/" || url == "/latest"){
-          $('html').addClass('show-custom-homepage'); // Show homepage
-          component.set('displayCustomHomepage', true);
-
-            ajax("/site.json").then (function(result){ // Get list of categories
-              let categoryName = [];
-              result.categories.forEach(function(categories){
-                categoryName.push(categories);
-            });
-            component.set('categoryName', categoryName);
-          });
-        }
-        else { // Hide homepage
-          $('html').removeClass('show-custom-homepage');
-          component.set('displayCustomHomepage', false);
-        }
-      });
-    }
-  });
-</script>
-
-<script
-  type="text/x-handlebars"
-  data-template-name="/connectors/below-site-header/custom-homepage"
->
-
-  {{#if displayCustomHomepage}}
-
-  <div class="custom-homepage-wrapper">
-
-    <div class="wrap wrap-category-boxes">
-
-      <div class="homepage-category-boxes">
-        {{#each categoryName as |c|}}
-        <a href="/c/{{c.slug}}" class="box">
-          <div class="homepage-category-box">
-            {{#if c.uploaded_logo}}
-            <div class="category-image-wrapper">
-              <img class="homepage-category-image" src="{{c.uploaded_logo.url}}" />
-            </div>
-            {{/if}}
-            <h2>{{#if c.read_restricted}}<i class="fa fa-lock">&nbsp;</i>{{/if}}{{c.name}}</h2>
-            <p>{{c.description}}</p>
-          </div>
-        </a>
-        {{/each}}
-      </div>
-
-    </div>
-
-  </div>
-  {{/if}}
-</script>
-
 <script
   type="text/x-handlebars"
   data-template-name="/connectors/below-site-header/custom-banner"
