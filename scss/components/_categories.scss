@@ -65,7 +65,7 @@
 }
 
 .artifact-category-arch-right {
-  mask: url($artifact-category-arch);
+  background-image: url($artifact-category-arch);
   background-size: 100% 100%;
   width: 170px;
   height: 601px;
