@@ -75,15 +75,18 @@
       {{#each categoryName as |c|}}
       <a href="/c/{{c.slug}}" class="box">
         <div class="homepage-category-box">
-          <div class="artifact-category-bubble-left"></div>
-          <div class="artifact-category-arch-right"></div>
+          {{#has @index="1, 3"}}
+            <div class="artifact-category-bubble-left"></div>
+            <div class="artifact-category-arch-right"></div>
+          {{/has}}
+
           <div class="category-content">
           {{#if c.uploaded_logo}}
           <div class="category-image-wrapper">
             <img class="homepage-category-image" src="{{c.uploaded_logo.url}}" />
           </div>
           {{/if}}
-          <h3>{{@index}} {{#if c.read_restricted}}<i class="fa fa-lock">&nbsp;</i>{{/if}}{{c.name}}</h3>
+          <h3>{{#if c.read_restricted}}<i class="fa fa-lock">&nbsp;</i>{{/if}}{{c.name}}</h3>
         </div>
         </div>
       </a>
