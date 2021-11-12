@@ -30,6 +30,15 @@
   &:hover {
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
     background-color: var(--color);
+
+    .artifact-category-bubble-left,
+    .artifact-category-arch-right,
+    .artifact-category-arch-left,
+    .artifact-category-circle-right,
+    .artifact-category-circle-left,
+    .artifact-category-bubble-right {
+      display: none;
+    }
   }
 }
 
