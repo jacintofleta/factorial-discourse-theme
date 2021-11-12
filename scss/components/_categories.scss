@@ -104,3 +104,13 @@
   top: -42%;
   left: -96px;
 }
+
+.artifact-category-bubble-right {
+  background-image: url($artifact-category-bubble);
+  background-size: 100% 100%;
+  width: 170px;
+  height: 601px;
+  position: absolute;
+  top: -42%;
+  right: -97px;
+}
