@@ -82,7 +82,7 @@
     <div class="homepage-category-boxes">
       {{#each categoryName as |c|}}
       <a href="/c/{{c.slug}}" class="box">
-        <div class="homepage-category-box">
+        <div class="homepage-category-box" style="--color: {{c.color}};">
           {{#if c.firstPosition}}
           <div class="artifact-category-bubble-left"></div>
           <div class="artifact-category-arch-right"></div>
@@ -113,8 +113,4 @@
   </div>
 
     {{/if}}
-</script>
-
-<script type="text/javascript">
-  console.log("PRUEBA", displayCustomHomepage);
 </script>
