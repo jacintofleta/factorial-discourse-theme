@@ -75,11 +75,8 @@
       {{#each categoryName as |c|}}
       <a href="/c/{{c.slug}}" class="box">
         <div class="homepage-category-box">
-          {{#has @index="1, 3"}}
-            <div class="artifact-category-bubble-left"></div>
-            <div class="artifact-category-arch-right"></div>
-          {{/has}}
-
+          <div class="artifact-category-bubble-left"></div>
+          <div class="artifact-category-arch-right"></div>
           <div class="category-content">
           {{#if c.uploaded_logo}}
           <div class="category-image-wrapper">
