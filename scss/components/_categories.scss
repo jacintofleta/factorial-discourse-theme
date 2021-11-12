@@ -53,7 +53,7 @@
   justify-content: center;
 }
 
-.artifact-category-left {
+.artifact-category-bubble-left {
   background-image: url($artifact-category-bubble);
   background-size: 100% 100%;
   width: 170px;
@@ -61,8 +61,14 @@
   position: absolute;
   top: -40%;
   left: -67px;
-  display: none;
-  @include xl {
-    display: block;
-  }
+}
+
+.artifact-category-arch-right {
+  background-image: url($artifact-category-arch);
+  background-size: 100% 100%;
+  width: 170px;
+  height: 601px;
+  position: absolute;
+  top: -160%;
+  right: -97px;
 }
