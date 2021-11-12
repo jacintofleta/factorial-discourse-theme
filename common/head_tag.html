@@ -83,7 +83,7 @@
             <img class="homepage-category-image" src="{{c.uploaded_logo.url}}" />
           </div>
           {{/if}}
-          <h3>{{#if c.read_restricted}}<i class="fa fa-lock">&nbsp;</i>{{/if}}{{c.name}} {{@index}}</h3>
+          <h3>{{@index}}{{#if c.read_restricted}}<i class="fa fa-lock">&nbsp;</i>{{/if}}{{c.name}}</h3>
         </div>
         </div>
       </a>
