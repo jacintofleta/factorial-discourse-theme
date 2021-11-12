@@ -6,6 +6,7 @@
   justify-content: space-between;
   gap: 36px;
   align-items: center;
+  flex-wrap: wrap;
   @include lg {
     flex-direction: row;
     gap: 24px;
@@ -46,7 +47,9 @@
 .category-content {
   display: flex;
   flex-direction: column;
-  flex: 1 0 auto;
+  min-height: 134px;
+  align-items: center;
+  justify-content: center;
 }
 
 .artifact-category-left {
