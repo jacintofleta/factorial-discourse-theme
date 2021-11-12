@@ -1,7 +1,7 @@
 // HERO BANNER
 
-.artifact-right {
-  background-image: url($artifact-arch);
+.artifact-hero-right {
+  background-image: url($artifact-hero-arch);
   background-size: 100% 100%;
   width: 296px;
   height: 601px;
@@ -14,8 +14,8 @@
   }
 }
 
-.artifact-left {
-  background-image: url($artifact-circle);
+.artifact-hero-left {
+  background-image: url($artifact-hero-circle);
   background-size: 100% 100%;
   width: 296px;
   height: 601px;

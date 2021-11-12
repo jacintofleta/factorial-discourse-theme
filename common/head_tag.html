@@ -55,8 +55,8 @@
 
     <!-- HERO BANNER -->
     <div class="hero-banner">
-      <div class="artifact-right"></div>
-      <div class="artifact-left"></div>
+      <div class="artifact-hero-right"></div>
+      <div class="artifact-hero-left"></div>
       <h1 style="margin-bottom: 24px">{{theme-i18n "banner.title_welcome"}} <span>{{theme-i18n "banner.title"}}</span></h1>
       <h4 style="margin-bottom: 24px">{{theme-i18n "banner.subtitle"}}</h4>
       <a href="/new-topic" style="color: #ffffff">
@@ -75,6 +75,7 @@
       {{#each categoryName as |c|}}
       <a href="/c/{{c.slug}}" class="box">
         <div class="homepage-category-box">
+          <div class="artifact-category-left"></div>
           <div class="category-content">
           {{#if c.uploaded_logo}}
           <div class="category-image-wrapper">

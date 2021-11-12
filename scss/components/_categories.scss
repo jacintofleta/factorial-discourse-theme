@@ -48,3 +48,17 @@
   flex-direction: column;
   flex: 1 0 auto;
 }
+
+.artifact-category-left {
+  background-image: url($artifact-category-bubble);
+  background-size: 100% 100%;
+  width: 296px;
+  height: 601px;
+  position: absolute;
+  top: 10%;
+  left: -10px;
+  display: none;
+  @include xl {
+    display: block;
+  }
+}
