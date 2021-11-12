@@ -25,6 +25,7 @@
   align-items: center;
   text-align: center;
   position: relative;
+  overflow: hidden;
 
   &:hover {
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
@@ -58,8 +59,8 @@
   width: 296px;
   height: 601px;
   position: absolute;
-  top: 10%;
-  left: -10px;
+  top: -40%;
+  left: -67px;
   display: none;
   @include xl {
     display: block;
