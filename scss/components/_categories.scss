@@ -35,12 +35,21 @@
       background-image: url($artifact-category-bubble-complementary);
     }
 
-    .artifact-category-arch-right,
-    .artifact-category-arch-left,
-    .artifact-category-circle-right,
-    .artifact-category-circle-left,
+    .artifact-category-arch-right {
+      background-image: url($artifact-category-arch-complementary);
+    }
+
+    .artifact-category-arch-left {
+      background-image: url($artifact-category-arch-viridian);
+    }
+    .artifact-category-circle-right {
+      background-image: url($artifact-category-arch-viridian);
+    }
+    .artifact-category-circle-left {
+      background-image: url($artifact-category-arch-purple);
+    }
     .artifact-category-bubble-right {
-      display: none;
+      background-image: url($artifact-category-arch-purple);
     }
   }
 }
