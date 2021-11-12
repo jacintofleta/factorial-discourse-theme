@@ -1,51 +1,64 @@
 <!-- CHECK IF ITS HOMEPAGE -->
 
 <script type="text/discourse-plugin" version="0.8">
-  const ajax = require('discourse/lib/ajax').ajax;
-  // This is the plugin outlet, followed by a custom name for the component
-  api.registerConnectorClass("below-site-header", "custom-banner", {
-
-    // Setting up our component
-    setupComponent(args, component) {
-
-     // Next we're getting the site setting 'top_menu',
-     // splitting the values into an array,
-     // and adding a leading slash
-     var topMenuRoutes =
-        Discourse.SiteSettings.top_menu.split('|')
-        .map(function(route) {return '/' + route});
-
-     // The first page listed in the 'top_menu' setting is your homepage
-     // lets assign it to a variable
-     var homeRoute = topMenuRoutes[0];
-
-     // This calls our code whenever the page changes
-     api.onPageChange((url) => {
-
-        // Check if we're on the homepage
-        url = url.split("?")[0];
-        if (url === "/" || url === homeRoute || url === "/top" ){
-          component.set("displayCustomHomepage", true);
-          ajax("/site.json").then(function(result){
-            let categoryName = [];
-              result.categories.forEach(function(categories){
-                console.log(categories);
-                if (categories.position == 1 || categories.position == 2 ||
-                categories.position == 3 )
-                  categoryName.push(categories);
-                  console.log(categories);
-            });
-            component.set('categoryName', categoryName);
-          })
-
-        } else {
-          $('html').removeClass('show-custom-homepage');
-          component.set("displayCustomHomepage", false);
-        }
-      });
+  Handlebars.registerHelper( "when",function(operand_1, operator, operand_2, options) {
+    var operators = {
+     'eq': function(l,r) { return l == r; },
+     'noteq': function(l,r) { return l != r; },
+     'gt': function(l,r) { return Number(l) > Number(r); },
+     'or': function(l,r) { return l || r; },
+     'and': function(l,r) { return l && r; },
+     '%': function(l,r) { return (l % r) === 0; }
     }
+    , result = operators[operator](operand_1,operand_2);
 
+    if (result) return options.fn(this);
+    else  return options.inverse(this);
   });
+    const ajax = require('discourse/lib/ajax').ajax;
+    // This is the plugin outlet, followed by a custom name for the component
+    api.registerConnectorClass("below-site-header", "custom-banner", {
+
+      // Setting up our component
+      setupComponent(args, component) {
+
+       // Next we're getting the site setting 'top_menu',
+       // splitting the values into an array,
+       // and adding a leading slash
+       var topMenuRoutes =
+          Discourse.SiteSettings.top_menu.split('|')
+          .map(function(route) {return '/' + route});
+
+       // The first page listed in the 'top_menu' setting is your homepage
+       // lets assign it to a variable
+       var homeRoute = topMenuRoutes[0];
+
+       // This calls our code whenever the page changes
+       api.onPageChange((url) => {
+
+          // Check if we're on the homepage
+          url = url.split("?")[0];
+          if (url === "/" || url === homeRoute || url === "/top" ){
+            component.set("displayCustomHomepage", true);
+            ajax("/site.json").then(function(result){
+              let categoryName = [];
+                result.categories.forEach(function(categories){
+                  console.log(categories);
+                  if (categories.position == 1 || categories.position == 2 ||
+                  categories.position == 3 )
+                    categoryName.push(categories);
+              });
+              component.set('categoryName', categoryName);
+            })
+
+          } else {
+            $('html').removeClass('show-custom-homepage');
+            component.set("displayCustomHomepage", false);
+          }
+        });
+      }
+
+    });
 </script>
 
 <script
@@ -84,7 +97,7 @@
             <img class="homepage-category-image" src="{{c.uploaded_logo.url}}" />
           </div>
           {{/if}}
-          <h3>{{c.position}} {{#if c.read_restricted}}<i class="fa fa-lock">&nbsp;</i>{{/if}}{{c.name}}</h3>
+          <h3>{{#if c.read_restricted}}<i class="fa fa-lock">&nbsp;</i>{{/if}}{{c.name}}</h3>
         </div>
         </div>
       </a>
