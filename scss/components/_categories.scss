@@ -31,7 +31,10 @@
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
     background-color: var(--color);
 
-    .artifact-category-bubble-left,
+    .artifact-category-bubble-left {
+      background-image: url($artifact-category-bubble-complementary);
+    }
+
     .artifact-category-arch-right,
     .artifact-category-arch-left,
     .artifact-category-circle-right,

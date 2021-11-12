@@ -17,7 +17,8 @@
     "artifact-hero-arch": "assets/artifacts/hero/arch.svg",
     "artifact-category-circle": "assets/artifacts/categories/circle.svg",
     "artifact-category-arch": "assets/artifacts/categories/arch.svg",
-    "artifact-category-bubble": "assets/artifacts/categories/bubble.svg"
+    "artifact-category-bubble": "assets/artifacts/categories/bubble.svg",
+    "artifact-category-bubble-complementary": "assets/artifacts/categories/bubble-complementary.svg"
   },
   "color_schemes": {
     "Factorial Colors": {
