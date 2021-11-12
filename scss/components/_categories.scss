@@ -94,3 +94,13 @@
   top: -50%;
   right: -97px;
 }
+
+.artifact-category-circle-left {
+  background-image: url($artifact-category-circle);
+  background-size: 100% 100%;
+  width: 170px;
+  height: 601px;
+  position: absolute;
+  top: -40%;
+  left: -67px;
+}
