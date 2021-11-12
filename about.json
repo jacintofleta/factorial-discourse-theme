@@ -15,7 +15,7 @@
     "fs-black-italic": "assets/font/fira-sans-v11-latin-900italic.woff2",
     "artifact-hero-circle": "assets/artifacts/hero/circle.svg",
     "artifact-hero-arch": "assets/artifacts/hero/arch.svg",
-    "artifact-category-circle": "assets/artifacts/category/circle.svg",
+    "artifact-category-circle": "assets/artifacts/categories/circle.svg",
     "artifact-category-arch": "assets/artifacts/categories/arch.svg",
     "artifact-category-bubble": "assets/artifacts/categories/bubble.svg"
   },
