@@ -150,3 +150,12 @@ th:nth-last-child(1) {
   border: 2px solid var(--neutral-20);
   color: var(--neutral-80);
 }
+
+#create-topic {
+  background-color: var(--radical-100);
+  color: white;
+
+  &:hover {
+    background-color: var(--radical-120);
+  }
+}
