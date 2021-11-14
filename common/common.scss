@@ -158,7 +158,8 @@ th:nth-last-child(1) {
   &:hover {
     background-color: var(--radical-120);
   }
-  .btn .d-icon {
-    color: white;
-  }
+}
+
+#create-topic .btn .d-icon {
+  color: white;
 }
