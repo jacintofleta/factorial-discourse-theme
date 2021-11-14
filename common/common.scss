@@ -5,14 +5,15 @@
 @import "buttons";
 @import "screens";
 
+// Set font
+body {
+  font-family: "Fira Sans";
+}
+
 // Import components
 
 @import "components/banner";
 @import "components/categories";
-
-body {
-  font-family: "Fira Sans";
-}
 
 h1 {
   font-weight: 700;
