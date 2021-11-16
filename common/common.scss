@@ -158,6 +158,9 @@ th:nth-last-child(1) {
   &:hover {
     background-color: var(--radical-120);
   }
+  @include lg {
+    display: none;
+  }
 }
 
 #create-topic .d-icon {
