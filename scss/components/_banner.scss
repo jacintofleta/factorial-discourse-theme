@@ -12,6 +12,9 @@
     top: -35%;
     right: -180px;
   }
+  @include xxl {
+    right: -35px;
+  }
 }
 
 .artifact-hero-left {
@@ -25,6 +28,9 @@
     display: block;
     top: 10%;
     left: -100px;
+  }
+  @include xxl {
+    left: -10px;
   }
 }
 
